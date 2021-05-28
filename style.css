@@ -10,7 +10,17 @@ main {
     top: 0;
     left: 0;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center; 
     overflow: auto;   
+}
+.q1 {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
