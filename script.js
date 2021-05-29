@@ -11,6 +11,6 @@ b1.addEventListener('click', function () {
     else {
         q1.style.backgroundColor = '#ff6666';
         q1.style.color = '#000000';
-        q1.innerHTML = "Не верное значение цвета!";
+        q1.innerHTML = "Неверное значение цвета!";
     }
 });
