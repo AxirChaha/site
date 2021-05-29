@@ -14,3 +14,22 @@ b1.addEventListener('click', function () {
         q1.innerHTML = "Неверное значение цвета!";
     }
 });
+
+// API ключ
+let apiKey = "dbad771bedc060986e0f1cd95cb650b8";
+// Город погода которого нужна
+let city = "Dnepr";
+// Формируем url для GET запроса
+let url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&lang=ru&units=metric&appid=${apiKey}`;
+
+// Отправка GET запроса
+axios.get(url).then(res => {
+    // Вывод города
+    document.querySelector('.city').innerHTML = res.data.name
+    // Вывод температуры
+    document.querySelector('.temp').innerHTML = res.data.main.temp
+    // Вывод влажности
+    document.querySelector('.humidity').innerHTML = res.data.main.humidity
+    // Вывод скорости ветра
+    document.querySelector('.wind').innerHTML = res.data.wind.speed
+})

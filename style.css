@@ -19,5 +19,11 @@ main {
     align-items: center;
 }
 .s1 {
-    margin-top: 10px;
+    margin-top: 20px;
+}
+.i1 {
+    font-size: 18px;
+}
+.b1 {
+    font-size: 18px;
 }
