@@ -15,6 +15,7 @@ b1.addEventListener('click', function () {
     }
 });
 
+/*
 // API ключ
 let apiKey = "dbad771bedc060986e0f1cd95cb650b8";
 // Город погода которого нужна
@@ -39,3 +40,5 @@ axios.get(url).then(res => {
     //console.log(res.data);
     //console.log(`${res.data.weather[0]['icon']}.png`);
 })
+
+*/
