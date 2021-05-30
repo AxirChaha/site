@@ -32,4 +32,10 @@ axios.get(url).then(res => {
     document.querySelector('.humidity').innerHTML = res.data.main.humidity
     // Вывод скорости ветра
     document.querySelector('.wind').innerHTML = res.data.wind.speed
+      document.querySelector('.test').innerHTML = res.data.weather[0].description
+    //document.querySelector('.test').innerHTML = `<img src="http://openweathermap.org/img/wn/${res.data.weather[0].icon}.png" alt='no'>`
+     document.querySelector('.test2').innerHTML = `<img src="./img/${res.data.weather[0]['icon']}.png">`
+
+    //console.log(res.data);
+    //console.log(`${res.data.weather[0]['icon']}.png`);
 })
