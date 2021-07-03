@@ -1,0 +1,39 @@
+body {
+    background-color: #636161;
+}
+.nav__logo {
+    max-width: 30px;
+}
+.block {
+    height: 200px;
+    font-size: 21px;
+    background-color: #424040;
+}
+/*==============================================*/
+.block__img {
+    width: 50px;
+    margin: 17px 0 0 17px;
+}
+/*==============================================*/
+.block2 {
+    height: 200px;
+    border: 1px solid #000;
+    background-color: #aca5a5;
+}
+/*==============================================*/
+.block3 {
+    height: 120px;
+    border: 1px solid #000;
+    background-color: #999595;
+}
+/*.form-control-color {*/
+/*    max-width: 100px;*/
+/*}*/
+.col1 {
+    max-width: 100px;
+}
+/*==============================================*/
+.block4 {
+    height: 100px;
+    background-color: #e88484;
+}
