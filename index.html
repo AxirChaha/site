@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Макет</title>
+</head>
+
+<body>
+    <div class="container">
+        <main class="main">
+            <h1 class="text-center">Цвет</h1>
+            <hr>
+            <div id="app">
+                <section>
+                    <div class="row">
+                        <div class="offset-1 col-4">
+                            <div class="block" v-bind:style="{ backgroundColor: bgd}">
+                                <h3 class="p-3 text-center" v-bind:style="{ color: txt }">Пример текста</h3>
+                                <img class="block__img" src="./img/logo.svg" alt="s">
+                            </div>
+                        </div>
+                        <div class="offset-1 col-5">
+                            <div class="block2">
+                                <h3 class="p-3 text-center">Стили</h3>
+                                <div class="tx col">Цвет фона - background-color: {{ bgd }};</div>
+                                <div class="tx col">Цвет текста - color: {{ txt }};</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row mt-3">
+                        <div class="offset-6 col-3">
+                            <div class="block3 d-flex p-3">
+                                <div class="col">
+                                    <label for="exampleColorInput1" class="form-label">Цвет фона</label>
+                                    <input type="color" class="form-control form-control-color col1"
+                                        id="exampleColorInput1" v-on:input="bgd = $event.target.value" value="#000000"
+                                        title="Choose your color">
+                                </div>
+                                <div class="col">
+                                    <label for="exampleColorInput2" class="form-label">Цвет текста</label>
+                                    <input type="color" class="form-control form-control-color col1"
+                                        id="exampleColorInput2" v-on:input="txt = $event.target.value" value="#ffffff"
+                                        title="Choose your color">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
