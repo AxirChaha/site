@@ -1,66 +1,86 @@
 <!doctype html>
-<html lang="ru">
-
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./lib/bootstrap.min.css">
-    <link rel="stylesheet" href="./style.css">
-    <title>Макет</title>
+    <title>Записи</title>
+    <link rel="stylesheet" href="./style/style.css">
 </head>
-
 <body>
-    <div class="container">
-        <main class="main">
-            <h1 class="text-center">Цвет</h1>
-            <hr>
-            <div id="app">
-                <section>
-                    <div class="row">
-                        <div class="offset-1 col-4">
-                            <div class="block" v-bind:style="{ backgroundColor: bgd}">
-                                <h3 class="p-3 text-center" v-bind:style="{ color: txt }">Пример текста</h3>
-                                <img class="block__img" src="./img/logo.svg" alt="s">
-                            </div>
-                        </div>
-                        <div class="offset-1 col-5">
-                            <div class="block2">
-                                <h3 class="p-3 text-center">Стили</h3>
-                                <div class="tx col">Цвет фона - background-color: {{ bgd }};</div>
-                                <div class="tx col">Цвет текста - color: {{ txt }};</div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="row mt-3">
-                        <div class="offset-6 col-3">
-                            <div class="block3 d-flex p-3">
-                                <div class="col">
-                                    <label for="exampleColorInput1" class="form-label">Цвет фона</label>
-                                    <input type="color" class="form-control form-control-color col1"
-                                        id="exampleColorInput1" v-on:input="bgd = $event.target.value" value="#000000"
-                                        title="Choose your color">
-                                </div>
-                                <div class="col">
-                                    <label for="exampleColorInput2" class="form-label">Цвет текста</label>
-                                    <input type="color" class="form-control form-control-color col1"
-                                        id="exampleColorInput2" v-on:input="txt = $event.target.value" value="#ffffff"
-                                        title="Choose your color">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-            </div>
-        </main>
+<div class="container">
+    <h1>Это временная версия</h1>
+    <div class="menu">
+        <ol>
+            <li><a href="#install">Инсталяция системы</a></li>
+            <li><a href="#unix">Unix, VM</a></li>
+            <li><a href="#lab">Lab</a></li>
+        </ol>
     </div>
-    <script src="./lib/bootstrap.bundle.min.js"></script>
-    <script src="./lib/vue.js"></script>
-    <script src="./script.js"></script>
+<!--  =================================================  -->
+    <hr>
+<!--  =================================================  -->
+    <div class="block">
+        <h2 id="install">Инсталяция системы</h2>
+        <ul class="content">
+            <li><a href="https://www.microsoft.com/ru-ru/software-download/windows10" target="_blank">Windows 10</a>
+            </li>
+            <li><a href="https://www.7-zip.org/" target="_blank">7-Zip</a></li>
+            <li><a href="https://www.google.com/intl/ru/chrome/" target="_blank">Браузер от Google</a></li>
+            <li><a href="https://www.opera.com/ru" target="_blank">Браузер Opera</a></li>
+            <li><a href="https://ru.libreoffice.org/" target="_blank">LibreOffice</a></li>
+            <li><a href="https://potplayer.ru/download/" target="_blank">PotPlayer <span class="vpn">vpn</span></a></li>
+            <li><a href="https://daumpotplayer.com/skins-black-box-space/" target="_blank">темный скин для PotPlayer</a>
+            </li>
+            <li><a href="https://www.faststone.org/index.htm" target="_blank">Image Viewer</a></li>
+            <li><a href="https://www.tracker-software.com/product/pdf-xchange-viewer" target="_blank">PDF-XChange</a>
+            </li>
+            <li><a href="https://www.qbittorrent.org/" target="_blank">qBittorrent</a></li>
+            <li><a href="https://www.ccleaner.com/" target="_blank">CCleaner</a></li>
+            <li><a href="https://ummydownloader.com/ru/" target="_blank">Ummy Video Downloader</a></li>
+        </ul>
+    </div>
+    <!--  =================================================  -->
+    <hr>
+    <!--  =================================================  -->
+    <div class="block">
+        <h2 id="unix">Unix, VM</h2>
+        <ul class="content">
+            <li><a href="https://ubuntu.com/" target="_blank">Ubuntu</a></li>
+            <li><a href="https://www.virtualbox.org/" target="_blank">VirtualBox</a></li>
+            <li><a href="https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html"
+                   target="_blank">VMware</a></li>
+            <li><a href="https://rufus.ie/ru/" target="_blank">Rufus</a></li>
+            <li><a href="https://winscp.net/eng/download.php" target="_blank">WinSCP</a></li>
+            <li><a href="https://kitty.en.lo4d.com/windows" target="_blank">KiTTY</a></li>
+            <li><a href="https://conemu.github.io/" target="_blank">ConEmu</a></li>
+        </ul>
+    </div>
+    <!--  =================================================  -->
+    <hr>
+    <!--  =================================================  -->
+    <div class="block">
+        <h2 id="lab">Lab</h2>
+        <ul class="content">
+            <li><a href="https://nodejs.org/ru/" target="_blank">Node.js</a></li>
+            <li><a href="https://www.php.net/" target="_blank">PHP</a></li>
+            <li><a href="https://www.python.org/" target="_blank">Python</a></li>
+            <li><a href="https://www.mingw-w64.org/" target="_blank">C & C++</a></li>
+            <li><a href="https://www.jetbrains.com/" target="_blank">JetBrains</a></li>
+            <li><a href="https://visualstudio.microsoft.com/ru/" target="_blank">Visual Studio</a></li>
+            <li><a href="https://atom.io/" target="_blank">Atom</a></li>
+            <li><a href="https://git-scm.com/" target="_blank">Git</a></li>
+            <li><a href="https://prepros.io/" target="_blank">Prepros</a></li>
+            <li><a href="https://gulpjs.com/" target="_blank">Gulp</a></li>
+            <li><a href="https://www.blacksunsoftware.com/colormania.html" target="_blank">ColorMania</a></li>
+            <li><a href="https://www.etrusoft.com/color-picker/" target="_blank">Quick HTML Color Picker</a></li>
+            <li><a href="https://browsersync.io/" target="_blank">Browsersync</a></li>
+            <li><a href="https://www.arduino.cc/" target="_blank">Arduino</a></li>
+            <li><a href="https://processing.org/" target="_blank">Processing</a></li>
+            <li><a href="https://flprog.ru/" target="_blank">FlProg <span class="vpn">vpn</span></a></li>
+        </ul>
+    </div>
+</div>
 </body>
-
 </html>
